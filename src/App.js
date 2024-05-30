@@ -5,7 +5,7 @@ import Portfolio from "./components/Portfolio";
 import Experiance from "./components/Experiance";
 import Footer from './components/Footer';
 import Contact from './components/Contact';
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 
 
 function App() {
