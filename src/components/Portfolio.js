@@ -1,44 +1,9 @@
 
-import java from '../img/java.png';
-import Python from '../img/python.webp';
-import mongodb from '../img/mongodb.jpg';
-import node from '../img/node.png';
-import reactjs from '../img/reactjs.png';
-import spring from '../img/spring.png';
+import { portfolioContext } from '../context/PortfolioContext';
+import { useContext } from 'react';
 
 function Portfolio(){
-    const cardItems=[
-        {
-            id:1,
-            logo:mongodb,
-            name:"MongoDB"
-        },
-        {
-            id:2,
-            logo:java,
-            name:"Java"
-        },
-        {
-            id:3,
-            logo:Python,
-            name:"Python"
-        },
-        {
-            id:4,
-            logo:node,
-            name:"NodeJs"
-        },
-        {
-            id:5,
-            logo:spring,
-            name:"Spring"
-        },
-        {
-            id:5,
-            logo:reactjs,
-            name:"ReactJs"
-        },
-    ]
+    const {ProjectItems}=useContext(portfolioContext);
 
     return (
         <div name="Portfolio" className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10">
@@ -47,7 +12,7 @@ function Portfolio(){
                 <span className="underline">Features Project</span>
                 <div className="grid  xl:grid-cols-4  lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-5 pt-2">
                     {
-                        cardItems.map(({id,logo,name})=>(
+                        ProjectItems.map(({id,logo,name})=>(
                             <div key={id} className="sm:h-[300px] sm:w-[300px] h-[300px] w-[350px]
                             shadow-lg bg-slate-50 flex flex-col  pt-4 rounded-md cursor-pointer hover:scale-105">
                                 <img className='ml-3 w-[130px] h-[130px] rounded-full' src={logo}></img>
