@@ -116,7 +116,7 @@ function About() {
             {/* ------------------------------------------------------- certifications ----------------------------------------------------- */}
             <motion.h2 className="text-green-500 font-semibold text-xl">Certificates</motion.h2>
             <motion.ul
-                className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-4"
+                className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-4 border-2 border-gray-200 rounded-sm"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -156,11 +156,11 @@ function About() {
             {/* --------------------------------------------------- Professional Experience---------------------------------------- */}
 
             <motion.h2 className="text-green-500 font-semibold text-xl">Professional Experience</motion.h2>
-            <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-2 ">
+            <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-2 p-2 border-2 border-gray-200 rounded-sm">
                 {AboutData.professional_experience?.map((exp, index) => (
                     <motion.div
                         key={index}
-                        className="mb-4 border-2 min-h-96"
+                        className="mb-2 border-2 rounded-md min-h-96 hover:shadow-2xl hover:shadow-current hover:scale-y-105 transition duration-300"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -169,10 +169,10 @@ function About() {
                         <p className="font-semibold flex gap-2 items-center m-2 justify-between text-lg">
                             <p>{index + 1}. {exp.title}, <span className="italic">{exp.company}</span></p>
                             <span className="text-sm text-gray-600"> ({exp.duration})</span>
-                            
+
                         </p>
-                        
-                        <img className="shadow-md rounded-sm hover:shadow-2xl hover:shadow-current hover:scale-y-105 transition duration-300" src={exp.imgUrl} alt={exp.imgUrl} />
+
+                        <img className="shadow-md rounded-sm " src={exp.imgUrl} alt={exp.imgUrl} />
 
                         <div className="flex my-4">
                             <p className="flex items-center text-md w-32">
@@ -186,8 +186,23 @@ function About() {
                         </div>
 
                         <div className="flex justify-between mx-8 mb-4">
-                            <a href={exp.deployedLink} className="text-blue-500 underline hover:text-blue-700" >Deployed Link</a>
-                            <a href={exp.gitHubLink} className="text-blue-500 underline hover:text-blue-700">GitHub Link</a>
+                            <a
+                                href={exp.deployedLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-500 underline hover:text-blue-700"
+                            >
+                                Deployed Link
+                            </a>
+                            <a
+                                href={exp.gitHubLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-500 underline hover:text-blue-700"
+                            >
+                                GitHub Link
+                            </a>
+
                         </div>
                     </motion.div>
                 ))}

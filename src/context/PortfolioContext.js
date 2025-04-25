@@ -46,7 +46,13 @@ export default function PortfolioContextProvider({ children }) {
     ];
 
     const AboutmeData =
-        'A web developer is a professional who specializes in creating and maintaining websites and web applications. They combine technical skills in programming languages such as HTML, CSS, JavaScript, and back-end languages like Python, Ruby, or PHP to build dynamic and responsive user interfaces. Web developers work closely with designers to bring visual designs to life and ensure that sites are user-friendly and accessible.';
+        `Aspiring Software Engineer | MERN Stack Developer | Data Science Enthusiast
+
+I'm Rohit Kumar, a B.Tech CSE student at Lovely Professional University with a strong passion for software development. I specialize in building full-stack web applications using the MERN stack and have created impactful projects like UR-SARTHI, a real-time mentorship platform, and Notes.Me, a secure note-taking app.
+
+Beyond development, I have a keen interest in data analysis and visualization, demonstrated through my Amazon Prime Video Dashboard project using Tableau. I’ve solved over 200 coding problems on platforms like LeetCode and GeeksforGeeks, constantly refining my problem-solving and algorithmic thinking.
+
+I actively pursue online certifications and practical learning to stay ahead in tech. My goal is to build scalable, secure, and user-centric solutions that create real-world impact and improve lives through innovation and technology.`;
 
         const AboutData = {
             education: [
@@ -106,7 +112,7 @@ export default function PortfolioContextProvider({ children }) {
                 company: "UR-SARTHI (Live Project)",
                 duration: "Jun 2024 – Aug 2024",
                 techUsed: [
-                  "Node.js", "Express.js", "MongoDB", "Zegocloud", "Razorpay", "Socket.io"
+                  "React Js","HTML","Javascript","Tailwind","Node.js","BcryptJs" ,"Express.js", "MongoDB", "Zegocloud", "Razorpay", "Socket.io"
                 ],
                 imgUrl: ur_sharthi1,
                 gitHubLink: "https://github.com/kumarrohit2002/UR_Sarthi-User",
@@ -117,18 +123,18 @@ export default function PortfolioContextProvider({ children }) {
                 company: "CipherSchools",
                 duration: "Jun 2024 – Jul 2024",
                 techUsed: [
-                  "React.js", "Node.js", "MongoDB", "Express.js", "JWT", "Tailwind CSS"
+                  "React.js", "Node.js", "MongoDB", "Express.js", "JWT", "Tailwind"
                 ],
                 imgUrl: notes1,
                 gitHubLink: "https://github.com/kumarrohit2002/Notes.me-App",
                 deployedLink: 'https://notes-me-app.vercel.app/'
               },
               {
-                title: "the Dresser",
-                company: "Amazon Prime Dashboard",
-                duration: "Sep 2024 – oct 2024",
+                title: "Full Stack Developer",
+                company: "the Dresser: E_commerce Website",
+                duration: "Mar 2025 – Apr 2025",
                 techUsed: [
-                  "Tableau", "Data Visualization", "Charts", "Dashboard Design"
+                  "React.js", "Node.js", "MongoDB", "Express.js", "JWT", "Tailwind"
                 ],
                 imgUrl: theDresser,
                 gitHubLink: "https://github.com/kumarrohit2002/E_commerce/",
@@ -147,10 +153,10 @@ export default function PortfolioContextProvider({ children }) {
               },
               {
                 title: "Data Analyst",
-                company: "Amazon Prime Dashboard",
+                company: "Sweet Spot: Diabetes Analytics",
                 duration: "Sep 2024 – oct 2024",
                 techUsed: [
-                  "Tableau", "Data Visualization", "Charts", "Dashboard Design"
+                  "Power BI", "Data Visualization", "Charts", "Dashboard Design"
                 ],
                 imgUrl:powerBiProject,
                 gitHubLink: "#",
@@ -169,7 +175,9 @@ export default function PortfolioContextProvider({ children }) {
           
             achievements: `Solved 200+ coding problems on LeetCode & GeeksforGeeks (2024)`,
           
-            mission_statement: `My mission is to leverage my skills and creativity to deliver innovative software engineering solutions that exceed client expectations and contribute positively to the digital landscape. I am committed to continuous learning and growth, always seeking new challenges and opportunities to expand my horizons.`
+            mission_statement: `My mission is to leverage my skills and creativity to deliver innovative software engineering solutions 
+            that exceed client expectations and contribute positively to the digital landscape. I am committed to continuous learning and 
+            growth, always seeking new challenges and opportunities to expand my horizons.`
           };
           
 
