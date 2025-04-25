@@ -101,7 +101,8 @@ I actively pursue online certifications and practical learning to stay ahead in 
                 category: "Soft Skills",
                 skills: [
                   { name: "Problem-Solving" },
-                  { name: "HardWorking" }
+                  { name: "HardWorking" },
+                  {name:"Team Player"}
                 ]
               }
             ],
