@@ -1,12 +1,13 @@
 import { FaSquareFacebook, FaTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import { IoLogoYoutube } from "react-icons/io";
+import { FaGithub } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
 
 import { RiReactjsLine } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { RiNodejsLine } from "react-icons/ri";
+import { SiLeetcode } from "react-icons/si";
 
 import pic from "../img/rohitImg.png";
 import { ReactTyped, Typed } from "react-typed";
@@ -43,10 +44,10 @@ function Home() {
                             <div className="space-y-2 pl-2">
                                 <h1 className="font-bold">Available on</h1>
                                 <div className="text-3xl flex space-x-5">
-                                    <a href="https://www.facebook.com/"> <FaSquareFacebook className="text-blue-700 cursor-pointer hover:scale-105" /></a>
+                                    <a href="https://github.com/kumarrohit2002"> <FaGithub className="text-blue-700 cursor-pointer hover:scale-105" /></a>
                                     <a href="https://www.linkedin.com/in/rohit-kumar111/"><FaLinkedin className="text-blue-500" /></a>
                                     <a href="https://x.com/Rohitkumar13723/"><FaTwitter className="text-blue-500"/></a>
-                                    <a href="https://web.telegram.org/a/"><FaTelegram className="text-blue-500" /></a>
+                                    <a href="https://leetcode.com/u/kumarrohit2002/"><SiLeetcode className="text-blue-500" /></a>
                                 </div>
                             </div>
                             <div className="space-y-2 pr-2">
