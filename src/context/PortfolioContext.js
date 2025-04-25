@@ -123,7 +123,7 @@ I actively pursue online certifications and practical learning to stay ahead in 
                 company: "CipherSchools",
                 duration: "Jun 2024 – Jul 2024",
                 techUsed: [
-                  "React.js", "Node.js", "MongoDB", "Express.js", "JWT", "Tailwind"
+                  "React.js", "Node.js", "MongoDB", "Express.js", "JWT Token", "Tailwind"
                 ],
                 imgUrl: notes1,
                 gitHubLink: "https://github.com/kumarrohit2002/Notes.me-App",
@@ -134,7 +134,7 @@ I actively pursue online certifications and practical learning to stay ahead in 
                 company: "the Dresser: E_commerce Website",
                 duration: "Mar 2025 – Apr 2025",
                 techUsed: [
-                  "React.js", "Node.js", "MongoDB", "Express.js", "JWT", "Tailwind"
+                  "React.js", "Node.js", "MongoDB", "Express.js", "JWT Token", "Tailwind"
                 ],
                 imgUrl: theDresser,
                 gitHubLink: "https://github.com/kumarrohit2002/E_commerce/",
