@@ -11,7 +11,7 @@ function Navbar() {
                     {id:1,text:"Home"},
                     {id:2,text:"About"},
                     {id:1,text:"Portfolio"},
-                    {id:1,text:"Expriance"},
+                    {id:1,text:"Experience"},
                     {id:1,text:"Contact"}
                 ]
 
