@@ -33,16 +33,7 @@ function Experience() {
                         Leveraging the most advanced technologies to engineer digital products that define the future.
                     </p>
 
-                    <div className="pt-16 grid grid-cols-2 gap-16 border-t border-white/5">
-                        <div className="space-y-4">
-                            <p className="text-4xl sm:text-5xl md:text-6xl font-[900] text-white tracking-tighter">100<span className="text-[#5454D4]">%</span></p>
-                            <p className="label-caps !text-[10px] tracking-[0.3em]">Quality Code</p>
-                        </div>
-                        <div className="space-y-4">
-                            <p className="text-4xl sm:text-5xl md:text-6xl font-[900] text-white tracking-tighter">0.1<span className="text-[#5454D4]">s</span></p>
-                            <p className="label-caps !text-[10px] tracking-[0.3em]">Fast Delivery</p>
-                        </div>
-                    </div>
+
                 </div>
                 
                 <div className="lg:w-2/3 grid grid-cols-2 sm:grid-cols-4 gap-8">

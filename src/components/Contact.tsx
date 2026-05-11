@@ -29,7 +29,7 @@ function Contact() {
       }
 
     return (
-        <section id="Contact" className="max-w-screen-2xl container mx-auto px-6 md:px-20 py-20 md:py-60">
+        <section id="Contact" className="max-w-screen-2xl container mx-auto px-4 md:px-20 py-20 md:py-60">
             <motion.div 
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -88,33 +88,33 @@ function Contact() {
                     </div>
                 </div>
 
-                <form onSubmit={handleSubmit(onSubmit)} className="space-y-12 md:space-y-16 bg-[#1A1C1C] p-8 md:p-20 rounded-2xl border border-white/5 relative group">
+                <form onSubmit={handleSubmit(onSubmit)} className="space-y-8 md:space-y-16 bg-[#1A1C1C] p-6 md:p-20 rounded-2xl border border-white/5 relative group">
                     <div className="absolute inset-0 bg-[#5454D4]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 rounded-2xl pointer-events-none"></div>
                     
-                    <div className="grid sm:grid-cols-2 gap-10 md:gap-16">
+                    <div className="grid sm:grid-cols-2 gap-8 md:gap-16">
                         <div className="space-y-4 md:space-y-6">
-                            <label className="label-caps !text-[10px] md:!text-[11px] tracking-[0.3em] !text-[#918F9F]">Full Name</label>
+                            <label className="label-caps !text-[9px] md:!text-[11px] tracking-[0.3em] !text-[#918F9F]">Full Name</label>
                             <input 
                                 {...register("name", { required: true })} 
-                                className="w-full bg-transparent border-b-2 border-white/10 py-4 md:py-6 text-lg md:text-2xl text-white outline-none focus:border-[#5454D4] transition-all duration-500 font-medium placeholder:text-white/5"
+                                className="w-full bg-transparent border-b-2 border-white/10 py-3 md:py-6 text-base md:text-2xl text-white outline-none focus:border-[#5454D4] transition-all duration-500 font-medium placeholder:text-white/5"
                                 placeholder="Enter your name"
                             />
                         </div>
                         <div className="space-y-4 md:space-y-6">
-                            <label className="label-caps !text-[10px] md:!text-[11px] tracking-[0.3em] !text-[#918F9F]">Email Address</label>
+                            <label className="label-caps !text-[9px] md:!text-[11px] tracking-[0.3em] !text-[#918F9F]">Email Address</label>
                             <input 
                                 {...register("email", { required: true })} 
-                                className="w-full bg-transparent border-b-2 border-white/10 py-4 md:py-6 text-lg md:text-2xl text-white outline-none focus:border-[#5454D4] transition-all duration-500 font-medium placeholder:text-white/5"
+                                className="w-full bg-transparent border-b-2 border-white/10 py-3 md:py-6 text-base md:text-2xl text-white outline-none focus:border-[#5454D4] transition-all duration-500 font-medium placeholder:text-white/5"
                                 placeholder="mail@example.com"
                             />
                         </div>
                     </div>
                     <div className="space-y-4 md:space-y-6">
-                        <label className="label-caps !text-[10px] md:!text-[11px] tracking-[0.3em] !text-[#918F9F]">Project Details</label>
+                        <label className="label-caps !text-[9px] md:!text-[11px] tracking-[0.3em] !text-[#918F9F]">Project Details</label>
                         <textarea 
                             {...register("query", { required: true })} 
                             rows={4}
-                            className="w-full bg-transparent border-b-2 border-white/10 py-4 md:py-6 text-lg md:text-2xl text-white outline-none focus:border-[#5454D4] transition-all duration-500 resize-none font-medium placeholder:text-white/5"
+                            className="w-full bg-transparent border-b-2 border-white/10 py-3 md:py-6 text-base md:text-2xl text-white outline-none focus:border-[#5454D4] transition-all duration-500 resize-none font-medium placeholder:text-white/5"
                             placeholder="Tell me about your project..."
                         ></textarea>
                     </div>
