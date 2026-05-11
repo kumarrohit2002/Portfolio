@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #5454D4;
+  --primary-light: #C1C1FF;
+  --bg-main: #121414;
+  --bg-card: rgba(25, 25, 27, 0.6);
+  --text-main: #FFFFFF;
+  --text-soft: #BABABA;
+  --text-muted: #918F9F;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-main);
+  letter-spacing: -0.03em;
+}
+
+@layer components {
+  .glass-dark {
+    @apply bg-[var(--bg-card)] backdrop-blur-[30px] border border-white/10;
+  }
+  
+  .card-premium {
+    @apply bg-[#1A1C1C] border border-white/5 transition-all duration-500 hover:border-purple-500/40 hover:shadow-[0_0_40px_rgba(84,84,212,0.15)];
+  }
+  
+  .section-title {
+    @apply text-4xl sm:text-5xl md:text-8xl font-[900] mb-12 tracking-[-0.04em] text-white leading-[1.1];
+  }
+
+  .stroke-text {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  }
+  
+  .btn-primary {
+    @apply bg-[#5454D4] hover:bg-[#4444c0] text-white font-bold py-5 px-12 rounded-lg transition-all duration-500 shadow-2xl shadow-purple-500/20 active:scale-95;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-[#BABABA];
+  }
+
+  .label-caps {
+    @apply text-[12px] font-bold uppercase tracking-[0.1em] text-[var(--text-muted)];
+  }
+}
+
+/* Cinematic Background Grain */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 9999;
+}
