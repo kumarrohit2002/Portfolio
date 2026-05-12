@@ -49,13 +49,13 @@ function Home() {
                 <div className="flex flex-col lg:flex-row items-center gap-24">
                     <div className="lg:w-2/3 space-y-12">
                         <div ref={contentRef} className="space-y-8">
-                            <p className="label-caps !text-[#C1C1FF]">Full-Stack Developer & Designer</p>
+                            <p className="label-caps !text-[#C1C1FF]">Full-Stack JavaScript Engineer & Next.js Specialist</p>
                             <h1
                                 ref={titleRef}
                                 className="text-4xl sm:text-6xl md:text-8xl lg:text-[120px] font-[900] tracking-[-0.08em] leading-[0.8] text-white uppercase mix-blend-difference"
                             >
-                                Building Modern <br />
-                                <span className="text-transparent stroke-text">Web Apps.</span>
+                                Building Scalable <br />
+                                <span className="text-transparent stroke-text">Digital Products.</span>
                             </h1>
 
                             <div className="text-lg sm:text-2xl md:text-4xl font-medium text-[var(--text-soft)] flex flex-wrap items-center gap-x-4 gap-y-2">
@@ -63,12 +63,12 @@ function Home() {
                                 <ReactTyped
                                     className="text-white font-black underline decoration-[#5454D4] underline-offset-8"
                                     strings={[
-                                        "Full-Stack Development",
-                                        "Workflow Automation",
-                                        "Real-Time Applications",
-                                        "Payment Integrations",
-                                        "Secure Backend Systems",
-                                        "SaaS Product Development"
+                                        "MERN Stack Applications",
+                                        "Enterprise Next.js Solutions",
+                                        "Scalable SaaS Platforms",
+                                        "Advanced Backend Architectures",
+                                        "Real-Time Collaborative Apps",
+                                        "Workflow Automation Systems"
                                     ]}
                                     typeSpeed={50}
                                     backSpeed={30}
