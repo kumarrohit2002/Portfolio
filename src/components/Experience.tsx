@@ -1,5 +1,6 @@
 "use client";
 import React, { useContext } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { portfolioContext } from "../context/PortfolioContext";
 
@@ -51,10 +52,12 @@ function Experience() {
                             
                             <div className="w-20 h-20 flex items-center justify-center relative z-10">
                                 <div className="absolute inset-0 bg-[#5454D4]/20 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-1000 scale-150"></div>
-                                <img 
+                                <Image 
                                     className="relative z-10 w-full h-full object-contain grayscale brightness-150 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700" 
                                     src={logo} 
-                                    alt={name} 
+                                    alt={name}
+                                    width={80}
+                                    height={80}
                                 />
                             </div>
                             <h3 className="label-caps !text-[10px] !text-[#918F9F] group-hover:!text-white transition-colors relative z-10 tracking-[0.2em]">{name}</h3>

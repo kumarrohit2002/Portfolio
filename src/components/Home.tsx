@@ -1,5 +1,6 @@
 "use client";
 import React, { useContext, useEffect, useRef } from "react";
+import Image from "next/image";
 import pic from "../../public/img/rohitImg.png";
 import { RiReactjsLine } from "react-icons/ri";
 import { ReactTyped } from "react-typed";
@@ -21,15 +22,15 @@ function Home() {
     useEffect(() => {
         if (titleRef.current && contentRef.current) {
             const tl = gsap.timeline();
-            tl.fromTo(titleRef.current, 
-                { y: 100, opacity: 0 }, 
+            tl.fromTo(titleRef.current,
+                { y: 100, opacity: 0 },
                 { y: 0, opacity: 1, duration: 1.2, ease: "power4.out", delay: 0.5 }
             )
-            .fromTo(contentRef.current.children,
-                { y: 30, opacity: 0 },
-                { y: 0, opacity: 1, duration: 0.8, stagger: 0.2, ease: "power3.out" },
-                "-=0.6"
-            );
+                .fromTo(contentRef.current.children,
+                    { y: 30, opacity: 0 },
+                    { y: 0, opacity: 1, duration: 0.8, stagger: 0.2, ease: "power3.out" },
+                    "-=0.6"
+                );
         }
     }, []);
 
@@ -49,19 +50,26 @@ function Home() {
                     <div className="lg:w-2/3 space-y-12">
                         <div ref={contentRef} className="space-y-8">
                             <p className="label-caps !text-[#C1C1FF]">Full-Stack Developer & Designer</p>
-                            <h1 
+                            <h1
                                 ref={titleRef}
                                 className="text-4xl sm:text-6xl md:text-8xl lg:text-[120px] font-[900] tracking-[-0.08em] leading-[0.8] text-white uppercase mix-blend-difference"
                             >
                                 Building Modern <br />
                                 <span className="text-transparent stroke-text">Web Apps.</span>
                             </h1>
-                            
+
                             <div className="text-lg sm:text-2xl md:text-4xl font-medium text-[var(--text-soft)] flex flex-wrap items-center gap-x-4 gap-y-2">
                                 <span>Developing</span>
                                 <ReactTyped
                                     className="text-white font-black underline decoration-[#5454D4] underline-offset-8"
-                                    strings={["MERN Stack Expert", "Full-Stack Developer", "UI/UX Designer"]}
+                                    strings={[
+                                        "Full-Stack Development",
+                                        "Workflow Automation",
+                                        "Real-Time Applications",
+                                        "Payment Integrations",
+                                        "Secure Backend Systems",
+                                        "SaaS Product Development"
+                                    ]}
                                     typeSpeed={50}
                                     backSpeed={30}
                                     loop={true}
@@ -83,7 +91,7 @@ function Home() {
                         </div>
                     </div>
 
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
@@ -91,16 +99,18 @@ function Home() {
                     >
                         <div className="relative group">
                             <div className="absolute inset-0 bg-[#5454D4]/30 rounded-[1.5rem] blur-[80px] opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
-                            
+
                             <div className="relative overflow-hidden rounded-[1.5rem] border border-white/10 aspect-[4/5] bg-[#1A1C1C]">
-                                <img 
-                                    src={pic.src} 
-                                    className="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-1000 scale-105 group-hover:scale-100" 
-                                    alt="Rohit Kumar" 
+                                <Image
+                                    src={pic}
+                                    alt="Rohit Kumar"
+                                    fill
+                                    priority
+                                    className="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-1000 scale-105 group-hover:scale-100"
                                 />
                             </div>
-                            
-                            <motion.div 
+
+                            <motion.div
                                 animate={{ y: [0, -20, 0] }}
                                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
                                 className="absolute -top-10 -right-10 glass-dark p-8 rounded-2xl border border-white/10 shadow-2xl"

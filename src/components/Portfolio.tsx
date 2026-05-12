@@ -1,5 +1,6 @@
 "use client";
 import React, { useContext } from 'react';
+import Image from 'next/image';
 import { portfolioContext } from '../context/PortfolioContext';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 
@@ -42,10 +43,12 @@ function ProjectCard({ logo, name, description, tech, link }: { logo: string; na
                 style={{ transform: "translateZ(50px)" }}
                 className="relative aspect-video overflow-hidden rounded-xl bg-[#1A1C1C] border border-white/5 transition-all duration-700 group-hover:border-[#5454D4]/30"
             >
-                <img 
+                <Image 
                     className="w-full h-full object-cover opacity-40 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000" 
                     src={logo} 
-                    alt={name} 
+                    alt={name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#121414] via-transparent to-transparent opacity-95"></div>
                 

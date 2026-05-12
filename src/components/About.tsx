@@ -1,5 +1,6 @@
 "use client";
 import React, { useContext } from 'react';
+import Image from 'next/image';
 import { portfolioContext } from '../context/PortfolioContext';
 import { motion } from "framer-motion";
 
@@ -99,7 +100,13 @@ function About() {
                             className="bg-[#1A1C1C] rounded-xl overflow-hidden border border-white/5 group hover:border-[#5454D4]/30 transition-all duration-1000"
                         >
                             <div className="aspect-[16/10] overflow-hidden grayscale brightness-50 group-hover:grayscale-0 group-hover:brightness-110 transition-all duration-1000 relative">
-                                <img src={cert.img} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt={cert.title} />
+                                <Image 
+                                    src={cert.img} 
+                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" 
+                                    alt={cert.title} 
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 33vw"
+                                />
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#121414] to-transparent opacity-80"></div>
                             </div>
                             <div className="p-12 space-y-6">
