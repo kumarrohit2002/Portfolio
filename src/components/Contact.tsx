@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import axios from 'axios';
-import { useForm } from "react-hook-form";
+import { useForm, type FieldValues } from "react-hook-form";
 import toast from 'react-hot-toast';
 import { motion } from 'framer-motion';
 
@@ -10,10 +10,9 @@ function Contact() {
         register,
         handleSubmit,
         reset,
-        formState: { errors },
       } = useForm();
     
-      const onSubmit = async (data: any) => {
+      const onSubmit = async (data: FieldValues) => {
         const userInfo = {
             name: data.name,
             email: data.email,
@@ -23,7 +22,7 @@ function Contact() {
             await axios.post("https://getform.io/f/brolvyoa", userInfo);
             toast.success("Transmission Received Successfully");
             reset();
-        } catch (error) {
+        } catch {
             toast.error("Transmission Interrupted");
         }
       }
@@ -46,11 +45,11 @@ function Contact() {
 
                 <div className="md:w-3/4 space-y-6 md:space-y-12 relative z-10">
                     <h2 className="text-4xl sm:text-6xl md:text-8xl lg:text-[120px] font-[900] text-white tracking-[-0.06em] leading-[0.8] uppercase">
-                        Let's Build <br /> 
+                        Let&apos;s Build <br /> 
                         <span className="text-transparent stroke-text">Something.</span>
                     </h2>
                     <p className="text-white/80 text-lg md:text-3xl font-medium max-w-2xl leading-relaxed">
-                        Ready to start your next big project? Let's connect and make it happen.
+                        Ready to start your next big project? Let&apos;s connect and make it happen.
                     </p>
                 </div>
 

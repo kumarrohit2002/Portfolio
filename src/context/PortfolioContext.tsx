@@ -1,10 +1,10 @@
 "use client";
 import React, { createContext, type ReactNode } from 'react';
 import { 
-    SiCplusplus, SiJavascript, SiTypescript, SiNextdotjs, SiExpress, 
-    SiMongodb, SiPostgresql, SiMysql, SiPrisma, SiTailwindcss, SiReactquery 
+    SiCplusplus, SiJavascript, SiNextdotjs, SiExpress, 
+    SiMongodb, SiPostgresql, SiMysql, SiTailwindcss, SiReactquery 
 } from "react-icons/si";
-import { FaJava, FaNodeJs, FaReact, FaGitAlt, FaGithub, FaHtml5, FaCss3Alt } from "react-icons/fa";
+import { FaJava, FaNodeJs, FaReact, FaGitAlt } from "react-icons/fa";
 
 interface Contact {
     email: string;
@@ -24,7 +24,7 @@ interface Education {
 
 interface Skill {
     name: string;
-    Icon?: any;
+    Icon?: React.ComponentType<{ size?: number | string; color?: string }>;
     color?: string;
 }
 

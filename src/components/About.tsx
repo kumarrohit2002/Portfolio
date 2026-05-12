@@ -119,7 +119,7 @@ function About() {
                     transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
                     className="text-xl sm:text-3xl md:text-7xl font-[900] text-white italic max-w-6xl mx-auto leading-[1] tracking-[-0.06em] selection:bg-white selection:text-black"
                 >
-                    "{AboutData.mission_statement}"
+                    &quot;{AboutData.mission_statement}&quot;
                 </motion.p>
             </div>
         </section>
