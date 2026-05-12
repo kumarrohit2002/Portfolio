@@ -35,7 +35,7 @@ function About() {
                             </div>
                             <div>
                                 <p className="label-caps !text-[10px] mb-3 tracking-[0.3em]">Get In Touch</p>
-                                <p className="text-white font-black text-lg md:text-xl tracking-tight">{AboutData.contact?.email}</p>
+                                <p className="text-white font-black text-sm sm:text-lg md:text-xl tracking-tight break-all">{AboutData.contact?.email}</p>
                             </div>
                         </motion.div>
                         <motion.div 
@@ -47,7 +47,7 @@ function About() {
                             </div>
                             <div>
                                 <p className="label-caps !text-[10px] mb-3 tracking-[0.3em]">Phone Number</p>
-                                <p className="text-white font-black text-lg md:text-xl tracking-tight">{AboutData.contact?.phone}</p>
+                                <p className="text-white font-black text-sm sm:text-lg md:text-xl tracking-tight break-all">{AboutData.contact?.phone}</p>
                             </div>
                         </motion.div>
                     </div>
